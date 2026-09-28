@@ -1,0 +1,10 @@
+# Default PyPI wheels; swap torch/torchvision for a build matching your CUDA if needed.
+torch==2.14.0
+torchvision==0.29.0
+
+numpy>=1.24
+opencv-python>=4.8,<5  # validated on 4.x; 5.0 is a brand-new major version
+tqdm>=4.65
+pillow>=10.1
+ultralytics>=8.3
+lap>=0.5.12  # BoT-SORT tracker; otherwise ultralytics installs it mid-run
